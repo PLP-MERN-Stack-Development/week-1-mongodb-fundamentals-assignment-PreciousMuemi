@@ -1,47 +1,74 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19919988&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+# 📚 PLP Bookstore MongoDB Project
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+This project showcases beginner to advanced MongoDB operations using a sample bookstore database. It includes data insertion, CRUD operations, aggregation pipelines, sorting, pagination, and indexing.
 
-## Assignment Overview
+## 🔗 Live Repository
+👉 [GitHub: PreciousMuemi/plp-mongodb-bookstore](https://github.com/PreciousMuemi/plp-mongodb-bookstore)
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+---
 
-## Getting Started
+## 🛠️ Setup Instructions
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+### 1. Clone the Repository
 
-## Files Included
+```bash
+git clone https://github.com/PreciousMuemi/plp-mongodb-bookstore.git
+cd plp-mongodb-bookstore
+2. MongoDB Setup
+You can use either:
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+✅ MongoDB Atlas (Cloud - used in this project)
 
-## Requirements
+Create an account at https://www.mongodb.com/cloud/atlas
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+Create a free cluster, user, and whitelist your IP
 
-## Submission
+Replace the connection URI in insert_books.js with your Atlas connection string
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+OR
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+☑️ MongoDB Compass / Local (for viewing only)
 
-## Resources
+📂 Files Included
+File	Description
+insert_books.js	Inserts 12 book documents into the books collection
+queries.js	Contains MongoDB CRUD, filtering, sorting, pagination, aggregation, and indexing queries
+README.md	Full project documentation and how-to guide
+screenshot_books_collection.png	Proof of working collection from MongoDB Atlas
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+💻 Skills Covered
+✔️ CRUD Operations (Insert, Find, Update, Delete)
+✔️ Advanced Filtering with Projections, Pagination, Sorting
+✔️ Aggregation Pipelines
+✔️ Indexing & Performance with explain()
+✔️ MongoDB Atlas cloud setup
+✔️ Working with VS Code MongoDB Playground
+✔️ Real JSON structure, data modeling, and schema planning
+
+🧪 How to Run
+1. Insert Data
+bash
+Copy
+Edit
+node insert_books.js
+Expected output:
+
+pgsql
+Copy
+Edit
+Connected to MongoDB server
+12 books inserted.
+Connection closed
+2. Run Queries in Playground
+Open queries.js
+Highlight one query at a time → Right-click → Run Selected Lines in Playground
+
+3. View Data in MongoDB Compass
+Connect to your MongoDB Atlas cluster
+Switch to the plp_bookstore database
+Expand the collections and view the books collection
+
+
+ Screenshot of books collection in MongoDB Atlas/Compass
+
+👩🏽‍💻 Author: @PreciousMuemi
